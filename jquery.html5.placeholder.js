@@ -1,4 +1,13 @@
-/*
+/*!
+ * Copyright Andrée Hansson, 2010
+ * GPL/MIT Multi-licensed.
+ * http://www.gnu.org/licenses/gpl.html
+ * http://www.opensource.org/licenses/mit-license.php
+ *
+ * GMail/Twitter:  peolanha
+ * IRC (FreeNode): peol
+ * Website:        http://andreehansson.se/
+ *
  * HTML5 Placeholder Support through jQuery.
  * Approach inspired (and partly taken) from Mike Taylors plugin over at
  * http://github.com/miketaylr/jQuery-html5-placeholder
