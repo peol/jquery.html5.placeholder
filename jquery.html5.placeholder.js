@@ -7,6 +7,7 @@
  * GMail/Twitter:  peolanha
  * IRC (FreeNode): peol
  * Website:        http://andreehansson.se/
+ * Github:         http://github.com/peol/
  *
  * HTML5 Placeholder Support through jQuery.
  * Approach inspired (and partly taken) from Mike Taylors plugin over at
@@ -25,7 +26,7 @@
 				me     = $(this),
 				id     = me[0].id || "placeholder" + +new Date,
 				value  = me.val(),
-				offset = me.offset(),
+				offset = me.position(),
 				label  = $('<label/>');
 
 			me
@@ -49,11 +50,12 @@
 					marginLeft: 5,
 					cursor:     me.css('cursor'),
 					lineHeight: me.css('line-height'),
-					fontSize:   me.css('font-size')
+					fontSize:   me.css('font-size'),
+					fontWeight: me.css('font-weight')
 				})
 				.attr('for', id)
 				.text( me.attr('placeholder') )
-				.appendTo('body');
+				.insertAfter(me);
 		});
 	};
 }();
