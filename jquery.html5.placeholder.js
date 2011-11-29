@@ -27,7 +27,7 @@
 				id     = me[0].id || "placeholder" + +new Date,
 				value  = me.val(),
 				offset = me.position(),
-				label  = $('<label/>');
+				label  = $('<label/>').addClass('html5-placeholder');
 
 			me
 				.attr('id', id)
